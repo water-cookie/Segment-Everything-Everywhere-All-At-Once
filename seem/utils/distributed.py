@@ -5,7 +5,7 @@ import pickle
 import subprocess
 
 import torch.distributed as dist
-
+from mpi4py import MPI
 
 def apply_distributed(opt):
     if opt['rank'] == 0:
